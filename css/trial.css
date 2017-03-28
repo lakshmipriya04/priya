@@ -1,0 +1,42 @@
+.carousel-caption
+{ z-index:10;
+}
+.intro{
+padding: 70px 100px 100px 100px;
+    color: black;
+    font-weight:300;
+   
+}
+.carousel-inner > .item > img{
+    position: absolute;
+    top:50 px;
+    left:0;
+    min-width: 100%;
+}
+.carousel-inner > .item
+{
+    height: 500px;
+}
+.tpad
+{
+    padding-top: 20px;
+}
+.bar a{
+    color:white;
+    font-weight:300;
+}
+.bar a:hover
+{
+    color:black;
+    background-color:skyblue;
+}
+.bar a:active{
+           color: darkviolet;
+       }
+@media(min-width: 768px)
+{
+    .carousel-inner > .item
+{
+    height: 500px;
+}
+}
