@@ -1,2 +1,4 @@
 # priya
-my portfolio,bookmark application,shooting game
+my portfolio @ index.html
+bookmark application @ indexjs.html
+shooting game @ shootgame.html
