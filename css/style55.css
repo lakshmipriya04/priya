@@ -269,8 +269,8 @@ body  {
    Progress bars
    ===================================================== */
 .progress {
-  padding: 4px;
-  margin-bottom: 10px;
+  padding: 0px;
+  margin-bottom: 1px;
   background: rgba(0, 0, 0, 0.25);
   border-radius: 6px;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
@@ -278,13 +278,9 @@ body  {
 }
 
 .progress-bar {
-  font-family: 'Yanone Kaffeesatz';
-  font-size: 14px;
   color: #111;
-  text-align: left;
-  text-indent: 6px;
   position: relative;
-  height: 16px;
+  height: 10px;
   border-radius: 4px;
   -webkit-transition: 0.4s linear;
   -moz-transition: 0.4s linear;
@@ -309,11 +305,11 @@ body  {
 .progress-bar:before {
   bottom: 0;
   z-index: 2;
-  background: url("../img/stripes.png") 0 0 repeat;
+  
   border-radius: 4px 4px 0 0;
 }
 .progress-bar:after {
-  bottom: 45%;
+  bottom: 5%;
   z-index: 3;
   border-radius: 4px;
   background-color: transparent;
@@ -326,14 +322,15 @@ body  {
 }
 
 .progress-bar { background-color: #222; }
+
 .cc > .progress-bar {
     background-color: #e2ccff;
-    width:88%; 
+    width:91%; 
     -moz-animation:ten 2s ease-out;
     -webkit-animation:ten 2s ease-out;
 }
-@-moz-keyframes ten {0%  { width:0px;} 100%{ width:87%;}  }
-@-webkit-keyframes ten { 0%  { width:0px;} 100%{ width:87%;}  }
+@-moz-keyframes ten {0%  { width:0px;} 100%{ width:91%;}  }
+@-webkit-keyframes ten { 0%  { width:0px;} 100%{ width:91%;}  }
 
 .cplus > .progress-bar {
   width: 90%;
@@ -345,13 +342,13 @@ body  {
 @-webkit-keyframes twenty  { 0%  { width:0px;} 100%{ width:90%;}  }
 
 .java > .progress-bar {
-  width: 85%;
+  width: 90%;
   background-color:#b366ff ;
     -moz-animation:thirty 2s ease-out;
     -webkit-animation:thirty 2s ease-out;
 }
-@-moz-keyframes thirty {0%  { width:0px;} 100%{ width:85;}  }
-@-webkit-keyframes thirty { 0%  { width:0px;} 100%{ width:85%;}  }
+@-moz-keyframes thirty {0%  { width:0px;} 100%{ width:90%;}  }
+@-webkit-keyframes thirty { 0%  { width:0px;} 100%{ width:90%;}  }
 
 .html > .progress-bar {
   width: 97%;
@@ -371,4 +368,21 @@ body  {
 @-moz-keyframes fifty {0%  { width:0px;} 100%{ width:90%;}  }
 @-webkit-keyframes fifty { 0%  { width:0px;} 100%{ width:90%;}  }
 
+.js > .progress-bar {
+  width: 65%;
+  background-color: #7500e6 ;
+    -moz-animation:fifty 2s ease-out;
+    -webkit-animation:fifty 2s ease-out;
+}
+@-moz-keyframes fifty {0%  { width:0px;} 100%{ width:65%;}  }
+@-webkit-keyframes fifty { 0%  { width:0px;} 100%{ width:65%;}  }
+
+.php > .progress-bar {
+  width: 55%;
+  background-color: #46008a ;
+    -moz-animation:fifty 2s ease-out;
+    -webkit-animation:fifty 2s ease-out;
+}
+@-moz-keyframes fifty {0%  { width:0px;} 100%{ width:55%;}  }
+@-webkit-keyframes fifty { 0%  { width:0px;} 100%{ width:55%;}  }
 
