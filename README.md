@@ -1,4 +1,4 @@
 # priya
-my portfolio @ index.html
-bookmark application @ indexjs.html
-shooting game @ shootgame.html
+my portfolio @ https://lakshmipriya04.github.io/priya/index.html ,
+bookmark application @ https://lakshmipriya04.github.io/priya/indexjs.html ,
+shooting game @ https://lakshmipriya04.github.io/priya/shootgame.html
