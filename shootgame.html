@@ -2,6 +2,11 @@
 <head>
 <title>shooter game</title>
 <style>
+a:link, a:visited, a:hover, a:active {
+    color:red; 
+    background-color: transparent;
+    text-decoration: none;
+}
 #hero
 {
 background-image: url(img/superheroe1.png);
@@ -51,11 +56,19 @@ position: absolute;
 </style>
 </head>
 <body>
+
+
 <div id="background"></div>
 <div id="hero"></div>
 <div id="laser"></div>
 <div id="score"></div>
-    <div id="gameover"><b><h1>GAME OVER!</h1></b></div>
+<div id="gameover"><b><h1>GAME OVER!</h1></b>
+                   <b><h1><a link  href="shootgame.html">&nbsp;&nbsp;&nbsp;&nbsp;RESTART </a></h1></b></div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div><h1><a href="project.html">Go Back</a></h1></div><div>
+    <div id="gameover"><h1><a href="shootgame.html">Restart</a></h1></div>
+    
 <script>
         
         var LEFT_KEY = 37;
@@ -189,7 +202,8 @@ function gameOver() {
   element.style.visibility = 'hidden';
   element = document.getElementById('gameover');
   element.style.visibility = 'visible';
-    var element1 = document.getElementById(laser.element1);
+    
+  var element1 = document.getElementById(laser.element1);
   element1.style.visibility = 'hidden';
   element1 = document.getElementById('gameover');
   element1.style.visibility = 'visible';
@@ -268,5 +282,6 @@ var laser = createSprite('laser',0,-120,2,50);
         
 loop();
 </script>
+   
 </body>
 </html>
