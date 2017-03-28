@@ -371,18 +371,18 @@ body  {
 .js > .progress-bar {
   width: 65%;
   background-color: #7500e6 ;
-    -moz-animation:fifty 2s ease-out;
-    -webkit-animation:fifty 2s ease-out;
+    -moz-animation:sixty 2s ease-out;
+    -webkit-animation:sixty 2s ease-out;
 }
-@-moz-keyframes fifty {0%  { width:0px;} 100%{ width:65%;}  }
-@-webkit-keyframes fifty { 0%  { width:0px;} 100%{ width:65%;}  }
+@-moz-keyframes sixty {0%  { width:0px;} 100%{ width:65%;}  }
+@-webkit-keyframes sixty { 0%  { width:0px;} 100%{ width:65%;}  }
 
 .php > .progress-bar {
   width: 55%;
   background-color: #46008a ;
-    -moz-animation:fifty 2s ease-out;
-    -webkit-animation:fifty 2s ease-out;
+    -moz-animation:seventy 2s ease-out;
+    -webkit-animation:seventy 2s ease-out;
 }
-@-moz-keyframes fifty {0%  { width:0px;} 100%{ width:55%;}  }
-@-webkit-keyframes fifty { 0%  { width:0px;} 100%{ width:55%;}  }
+@-moz-keyframes seventy {0%  { width:0px;} 100%{ width:55%;}  }
+@-webkit-keyframes seventy { 0%  { width:0px;} 100%{ width:55%;}  }
 
