@@ -160,7 +160,7 @@ function test_input($data) {
         </div>
        
           <div class="col-md-8" align="center"><h2><p>
-          Download my Resume here &rsaquo;&rsaquo; <a href=".//doc/currentresume.pdf"><input type="image" src=".//img/downloading-file.png"/></a></p></h2>
+          Download my Resume here &rsaquo;&rsaquo; <a href=".//doc/Lakshmi Priya.pdf"><input type="image" src=".//img/downloading-file.png"/></a></p></h2>
           </div></div></div>
 <!-- /container -->
 	</body>
