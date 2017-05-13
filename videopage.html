@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+        <meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/icons.css" />
+        <link rel="stylesheet" type="text/css" href="css/videocss.css" />
+        <link rel="shortcut icon" href="../favicon.ico">
+        <script src="js/modernizr.custom.js"></script>
+		<title>video homepage</title>
+    <style>
+            video#bgvid{
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-height: 100%;
+            min-width: 100%;
+            width : auto;
+            height: auto;
+            background: url(img/Screenshot_2.jpg) no-repeat;
+            background-size: cover;
+            z-index: -1; 
+            display: block;
+            }
+        body{
+            background-color: black;
+            }
+        p{
+            text-align: center;
+        }
+        img.cent{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 200px;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+
+<nav id="bt-menu" class="bt-menu">
+<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+</nav>
+    
+<video id="bgvid" autoplay loop muted poster="img/Screenshot_2.jpg">
+<source src="video/white%20triangles%20background.mp4" type="video/mp4"/>
+</video> 
+<img src="img/logo.png" class="cent">
+    
+
+</body>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/borderMenu.js"></script>
+</html>

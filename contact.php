@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   } else {
     $contact = test_input($_POST["contact"]);
       // check if contact only contains numbers
-    if (!(preg_match($mob="/^[1-9][0-9]*$/",$contact)&& strlen($contact)==10)) {
+    if (!(preg_match($mob="/^[1-9][0-9]*$/",$contact) || strlen($contact)==10)) {
       $contactErr = "Invalid mobile number format"; }
   }
 
