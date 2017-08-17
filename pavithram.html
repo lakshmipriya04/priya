@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<!-- Page Title -->
+        <title>Pavithram</title>		
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<!-- CSS -->
+		<!-- Bootstrap css -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- Main Stylesheet -->
+        <link rel="stylesheet" href="css/main.css">
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	</head>
+	
+    <body id="body">
+        <!-- 
+        Fixed Navigation
+        ==================================== -->
+        <header id="navigation" class="navbar-fixed-top navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa"><img src="img/menu.png"></i>
+                    </button>
+					<!-- /responsive nav button -->
+					
+					<!-- logo -->
+                    <a class="navbar-brand" href="#">
+                        <h1 id="logo" style="font-size:25px; padding-top:6px; font-weight:500px;">Pavithram</h1>
+                        <h1 id="logo" style="font-size:20px; padding-top:0px; font-weight:normal;">holidays</h1>
+					</a>
+                </div>
+
+				<!-- main nav -->
+                <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                    <ul id="nav" class="nav navbar-nav">
+                        <li class="current"><a href="#body" class="active">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#trips">Trips</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </nav>
+				<!-- /main nav -->
+				
+            </div>
+        </header>
+        <!--
+        End Fixed Navigation
+        ==================================== -->
+
+        <!--
+        section1
+        ==================================== -->
+        
+<section id="quotes">     
+    <div class="container"><br><br><br>
+ <h1 style="font-size:25px; font-weight:lighter;  text-align:center;">
+     <i>"There are innumerable reasons to travel. And this is your one stop place." </i>
+        </h1>  </div>
+  </section>  
+        <!--
+        End section1
+        ==================================== -->
+        
+      <div class="search">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="form-section">
+                <div class="row">
+                    <form role="form">
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="sr-only" for="location">search</label>
+                          <input type="email" class="form-control" id="location" placeholder="Search for tours, cities, experiences or activities">
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="form-group">
+                          <label class="sr-only" for="checkin">Start Date</label>
+                          <div class="input-group">
+                            <input type="text" class="form-control" id="checkin" placeholder="Start Date">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="form-group">
+                          <label class="sr-only" for="checkout">End Date</label>
+                          <div class="input-group">
+                            <input type="text" class="form-control" id="checkout" placeholder="End Date">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="form-group">
+                          <label class="sr-only" for="guest">People</label>
+                          <div class="input-group">
+                            <input type="text" class="form-control" id="guest" placeholder="People">
+                            <span class="input-group-addon"><i><img src="img/profile1.png"></i></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <button type="submit" class="srchbtn">SEARCH</button>
+                      </div>
+                    </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<script>
+$(window).ready(function(){
+      var nowTemp = new Date();
+      var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+      var checkin = $('#checkin').datepicker({
+        onRender: function(date) {
+          return date.valueOf() < now.valueOf() ? 'disabled' : '';
+        }
+      }).on('changeDate', function(ev) {
+        if (ev.date.valueOf() > checkout.date.valueOf()) {
+          var newDate = new Date(ev.date)
+          newDate.setDate(newDate.getDate() + 1);
+          checkout.setValue(newDate);
+        }
+        checkin.hide();
+        $('#checkout')[0].focus();
+      }).data('datepicker');
+      var checkout = $('#checkout').datepicker({
+        onRender: function(date) {
+          return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+        }
+      }).on('changeDate', function(ev) {
+        checkout.hide();
+      }).data('datepicker');
+    });
+</script>
+     
+        
+        <!--
+        slider1
+        ==================================== -->
+        
+<div class="container">
+<div class="row">
+        <div class="col-md-4 col-md-offset-2">        
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-left:0px;">
+      <div class="carousel-inner">
+        <div class="item active">
+            <div class="carousel-caption">
+             <h3>Kerala</h3>
+            </div>
+          <img src="img/kerala.jpg" alt="First slide">          
+        </div>
+        <div class="item">
+            <div class="carousel-caption">
+             <h3>TamilNadu</h3>
+            </div>
+          <img src="img/tamilnadu.jpg" alt="Second slide">
+        </div>
+        <div class="item">
+            <div class="carousel-caption">
+             <h3>Goa</h3>
+            </div>
+          <img src="img/goa.jpg" alt="Third slide">
+        </div>
+      </div>
+  
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+        
+           
+            </div>
+        <div class="col-md-4">
+            
+            <h2>Tours In India</h2><br>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qui non moveatur et offensione turpitudinis et comprobatione honestatis? Quis enim potest ea, quae probabilia videantu.</p>
+             <br><button class="btn">View More</button>
+               
+    </div>
+    </div>
+        </div>
+         <!--
+        End slider1
+        ==================================== -->
+        
+<!--
+        slider2
+        ==================================== -->
+        
+<div class="container">
+<div class="row">
+      <div class="col-md-4 col-md-offset-2">
+            
+               <h2>Tours Around The World</h2><br>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qui non moveatur et offensione turpitudinis et comprobatione honestatis? Quis enim potest ea, quae probabilia videantu.</p>
+           <br><button class="btn">View More</button>
+               
+    </div>
+        <div class="col-md-4">        
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-left:0px;">
+      <div class="carousel-inner">
+        <div class="item active">
+            <div class="carousel-caption">
+             <h3>Bali</h3>
+            </div>
+          <img src="img/bali-island-indonesia.jpg" alt="First slide">          
+        </div>
+        <div class="item">
+            <div class="carousel-caption">
+             <h3>Switzerland</h3>
+            </div>
+          <img src="img/s1.jpg" alt="Second slide">
+        </div>
+        <div class="item">
+            <div class="carousel-caption">
+             <h3>Malaysia</h3>
+            </div>
+          <img src="img/Malaysia.jpg" alt="Third slide">
+        </div>
+      </div>
+  
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+        
+           
+            </div>
+      
+    </div>
+        </div>
+         <!--
+        End slider2
+        ==================================== -->
+
+<!--
+        slider3
+        ==================================== -->
+        
+<div class="container">
+<div class="row">
+        <div class="col-md-4 col-md-offset-2">        
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-left:0px;">
+      <div class="carousel-inner">
+        <div class="item active">
+            <div class="carousel-caption">
+             <h3>Family</h3>
+            </div>
+          <img src="img/family.jpg" alt="First slide">          
+        </div>
+        <div class="item">
+            <div class="carousel-caption">
+             <h3>Friends</h3>
+            </div>
+          <img src="img/friends-onbeach-holiday.jpg" alt="Second slide">
+        </div>
+        <div class="item">
+            <div class="carousel-caption">
+             <h3>Couples</h3>
+            </div>
+          <img src="img/couple-on-beach-holiday-543313.jpg" alt="Third slide">
+        </div>
+      </div>
+  
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+        
+           
+            </div>
+        <div class="col-md-4">
+            
+               <h2>Themes</h2><br>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qui non moveatur et offensione turpitudinis et comprobatione honestatis? Quis enim potest ea, quae probabilia videantu.</p>
+             <br><button class="btn">View More</button>
+               
+    </div>
+    </div>
+        </div>
+         <!--
+        End slider3
+        ==================================== -->
+        
+<!--
+        slider4
+        ==================================== -->
+        
+<div class="container">
+<div class="row">
+    <div class="col-md-4 col-md-offset-2">
+            
+               <h2>Explore Activities</h2><br>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qui non moveatur et offensione turpitudinis et comprobatione honestatis? Quis enim potest ea, quae probabilia videantu.</p>
+         <br><button class="btn">View More</button>
+               
+    </div>
+        <div class="col-md-4">        
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-left:0px;">
+      <div class="carousel-inner">
+        <div class="item active">
+            <div class="carousel-caption">
+             <h3>Wildlife</h3>
+            </div>
+          <img src="img/wildlife.jpg" alt="First slide">          
+        </div>
+        <div class="item">
+            <div class="carousel-caption">
+             <h3>Cave</h3>
+            </div>
+          <img src="img/Cave.jpg" alt="Second slide">
+        </div>
+        <div class="item">
+            <div class="carousel-caption">
+             <h3>Trekking</h3>
+            </div>
+          <img src="img/trek.jpg" alt="Third slide">
+        </div>
+      </div>
+  
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+        
+           
+            </div>
+        
+    </div>
+        </div>
+         <!--
+        End slider4
+        ==================================== -->
+        
+<!--
+        slider5
+        ==================================== -->
+        
+<div class="container">
+<div class="row">
+        <div class="col-md-4 col-md-offset-2">        
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-left:0px;">
+      <div class="carousel-inner">
+        <div class="item active">
+            <div class="carousel-caption">
+             <h3>Wine Tasting</h3>
+            </div>
+          <img src="img/wine.jpg" alt="First slide">          
+        </div>
+        <div class="item">
+            <div class="carousel-caption">
+             <h3>Campfire</h3>
+            </div>
+          <img src="img/campfire.jpg" alt="Second slide">
+        </div>
+        <div class="item">
+            <div class="carousel-caption">
+                <h3>food</h3>
+            </div>
+          <img src="img/food.jpg" alt="Third slide">
+        </div>
+      </div>
+  
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+        
+           
+            </div>
+        <div class="col-md-4">
+            
+               <h2>Experiences</h2><br>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qui non moveatur et offensione turpitudinis et comprobatione honestatis? Quis enim potest ea, quae probabilia videantu.</p>
+            <br><button class="btn">View More</button>
+               
+    </div>
+    </div>
+        </div>
+         <!--
+        End slider5
+        ==================================== -->
+        
+	        
+        <!--
+        End Contact Us
+        ==================================== -->
+		
+		
+		<footer id="footer" class="footer">
+			<div class="container">
+				<div class="row">
+				<div class="col-md-5 col-md-offset-2">
+				<p id="sidetext">
+                    <a href="#" style=" color: white;">pavithramholidays.com</a><br><br>
+                    <a href="#" style=" color: white;">About</a><br>
+                    <a href="#" style=" color: white;">Contact Us</a><br>
+                    </p></div>
+                    
+				<div class="col-md-5">
+                    <div style="float:right;">
+                    <a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa"><img src="img/e-mail-envelope.png"></a></div>
+                    
+				<br><br><br><p  style="float:right;"> © COPYRIGHT 2017 ALL RIGHT RESERVED
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		 <!-- scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <!-- Bootstrap js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,172 @@
+body {
+    background-color:whitesmoke;
+    font-family: 'Alegreya';
+    line-height: 21px;
+	font-size: 16px;
+    color: black;
+    
+}
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+ p {
+    margin: 0;
+}
+
+a {
+    color: black;
+}
+
+iframe {
+    border: 0;
+}
+
+a, a:focus, a:hover {
+    text-decoration: none;
+    outline: 0;
+}
+
+a:focus, a:hover {
+    color: #6CB670;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+	font-weight: normal;
+	margin: 0;
+}
+
+
+body > section,
+.footer {
+	padding: 70px 0;
+}
+
+.footer {
+    background-color: #5d6c98;
+    color: white;
+}
+
+/*=========================================
+	Header
+==========================================*/
+
+#navigation {
+    margin: 0px;
+    padding-top: 20px;
+  background-color: whitesmoke;
+  color: black;
+  border: 0 none;
+  height: 100px;
+  
+    -webkit-transition: background-color 800ms linear;
+       -moz-transition: background-color 800ms linear;
+	    -ms-transition: background-color 800ms linear;
+         -o-transition: background-color 800ms linear;
+			transition: background-color 800ms linear;
+}
+
+@media (max-width: 767px) {
+  .navbar-collapse
+    {
+        background-color:white;
+    }
+}
+.navbar-brand {
+  padding: 0;
+}
+
+.navbar-nav li a {
+	border-bottom: 1px solid transparent;
+     font-size: 20px;
+}
+
+.navbar-nav li a.current,
+.navbar-nav li a:focus,
+.navbar-nav li a:hover {
+	background-color: transparent;
+	border-bottom: 1.5px solid black;
+	color: black;
+    font-size: 20px;
+}
+
+/*=========================================
+	carousel
+==========================================*/
+.carousel {
+background:rgba(0,0,0,0.4);
+  height: 300px;
+  width: 300px;
+  margin-bottom: 60px;
+}
+.carousel .item {
+  height: 300px;
+  width: 300px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 100%;
+}
+
+
+.btn {
+  font-family: Georgia;
+  color: #55a0cf;
+  font-size: 15px;
+  background: whitesmoke;
+  padding: 5px 25px 5px 25px;
+  border: solid #55a0cf 1px;
+    border-radius: 0;
+  text-decoration: none;
+}
+
+#sidetext{
+   
+    font-size:20px;
+}
+
+.fa {
+  padding: 12px;
+  font-size: 40px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 15px;
+  border-radius: 100%;
+  background: black;
+  color: white;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.search {
+    margin-bottom: 70px;
+}
+.search .form-section{
+	background:whitesmoke;
+	border: 0px solid grey;
+	padding: 10px 2px 2px 10px;
+}
+
+.srchbtn{
+    font-family: sans-serif;
+  color: white;
+  font-size: 12px;
+  background:#5d6c98;
+  padding: 5px 35px 5px 35px;
+  border: solid #5d6c98 1px;
+    border-radius: 0;
+  text-decoration: none;
+}
