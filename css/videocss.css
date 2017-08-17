@@ -80,7 +80,7 @@
 .bt-menu-trigger span:after {
 	-webkit-transform: translateY(250%);
 	transform: translateY(250%);
-}
+}1
 
 .bt-menu-open .bt-menu-trigger span:before {
 	-webkit-transform: translateY(-300%);
